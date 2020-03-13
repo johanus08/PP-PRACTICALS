@@ -1,5 +1,5 @@
-#!/usr/bin/python3
-
+# Python program to send a email
+# !/usr/bin/python3
 import smtplib
 import getpass
 
