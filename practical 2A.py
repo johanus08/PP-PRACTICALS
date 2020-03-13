@@ -1,5 +1,5 @@
-#python program to show iterables,itertors and itertry
-#python program to show iterator
+# Python program to show iterables,itertors and itertry
+# Python program to show iterator
 
 print("----------ITERATORS------------")
 lst1=["Mumbai","Pune","Delhi","Patna"]
@@ -10,7 +10,7 @@ print(next(iterator_obj))
 print(next(iterator_obj))
 print(next(iterator_obj))
 
-#python program to show iterator
+# Python program to show iterator
 lst1=["Mumbai","Pune","Delhi","Patna"]
 for city in lst1:
                 print(city)
@@ -24,7 +24,7 @@ print("\n")
 for s in "Iteration is easy":
                 print(s,end=" ")
 
-#python program to show iteratry
+# Python program to show iteratry
 def iterable(obj):
                 try:
                                 iter(obj)
