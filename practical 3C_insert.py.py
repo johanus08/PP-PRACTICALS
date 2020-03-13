@@ -1,0 +1,13 @@
+import mysql.connector as mysql
+conn = mysql.connect(user="root",password="scott",host='127.0.0.1')
+c=conn.cursor()
+c.execute("use johanus")
+c.execute("insert into students values(1,'bhumi','malad')")
+c.execute("insert into students values(2,',mitali','kandivali')")
+c.execute("insert into students values(3,'azra','malad')")
+c.execute("insert into students values(4,'gauri','goregoan')")
+c.execute("insert into students values(5,'pranjal','malad')")
+conn.commit()
+c.execute("select  * from students")
+print(c.fetchall())
+conn.close()
