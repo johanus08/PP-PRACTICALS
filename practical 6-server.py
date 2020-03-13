@@ -1,16 +1,19 @@
 import socket                                         
-# create a socket object
+# Create a socket object
 serversocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM) 
-# get local machine name
+
+# Get local machine name
 host = socket.gethostname()
 print(host)
-port = 9999                                           
-# bind to the port
+port = 9999
+
+# Bind to the port
 serversocket.bind((host, port))                                  
-# queue up to 5 requests
-serversocket.listen(5)                                           
+# Queue up to 5 requests
+serversocket.listen(5) 
+
 while True:
-   # establish a connection
+   # Establish a connection
    clientsocket,addr = serversocket.accept()      
    print("Got a connection from %s" % str(addr))
    msg = 'Thank you for connecting'+ "\r\n"
